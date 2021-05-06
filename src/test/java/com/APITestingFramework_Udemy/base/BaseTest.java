@@ -8,12 +8,15 @@ import java.util.Properties;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.APITestingFramework.ExcelReader.ExcelReader;
+
 import io.restassured.RestAssured;
 
 public class BaseTest {
 	
-	public Properties prop;
-	private FileInputStream fis;
+	public static Properties prop= new Properties();
+	public FileInputStream fis;
+	public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\Excel\\testdata.xlsx");
 	
 	@BeforeSuite
 	public void setUp() {
