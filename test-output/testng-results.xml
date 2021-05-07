@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-06T05:02:09Z" name="Default suite" finished-at="2021-05-06T05:02:12Z" duration-ms="3446">
+  <suite name="Default suite" duration-ms="8556" started-at="2021-05-07T18:11:29 IST" finished-at="2021-05-07T18:11:37 IST">
     <groups>
     </groups>
-    <test started-at="2021-05-06T05:02:09Z" name="Default test" finished-at="2021-05-06T05:02:12Z" duration-ms="3446">
-      <class name="com.APITestingFramework.testcases.DeleteCustomerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.APITestingFramework.testcases.DeleteCustomerTest@315f43d5]" started-at="2021-05-06T05:02:08Z" name="setUp" finished-at="2021-05-06T05:02:09Z" duration-ms="890" status="PASS">
+    <test name="Default test" duration-ms="8556" started-at="2021-05-07T18:11:29 IST" finished-at="2021-05-07T18:11:37 IST">
+      <class name="com.APITestingFramework_Udemy.rough.TestPayPal">
+        <test-method status="PASS" signature="getAuthKey()[pri:1, instance:com.APITestingFramework_Udemy.rough.TestPayPal@2f943d71]" name="getAuthKey" duration-ms="5702" started-at="2021-05-07T18:11:29 IST" finished-at="2021-05-07T18:11:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ValidateDeleteCustomerAPIWithValidId(java.util.Hashtable)[pri:0, instance:com.APITestingFramework.testcases.DeleteCustomerTest@315f43d5]" started-at="2021-05-06T05:02:09Z" name="ValidateDeleteCustomerAPIWithValidId" data-provider="data" finished-at="2021-05-06T05:02:12Z" duration-ms="3371" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{id=cus_JQJ4XMXLX3L5q0}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getAuthKey -->
+        <test-method status="PASS" signature="createOrder()[pri:2, instance:com.APITestingFramework_Udemy.rough.TestPayPal@2f943d71]" name="createOrder" duration-ms="2784" started-at="2021-05-07T18:11:34 IST" depends-on-methods="com.APITestingFramework_Udemy.rough.TestPayPal.getAuthKey" finished-at="2021-05-07T18:11:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateDeleteCustomerAPIWithValidId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.APITestingFramework.testcases.DeleteCustomerTest@315f43d5]" started-at="2021-05-06T05:02:12Z" name="tearDown" finished-at="2021-05-06T05:02:12Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.APITestingFramework.testcases.DeleteCustomerTest -->
+        </test-method> <!-- createOrder -->
+      </class> <!-- com.APITestingFramework_Udemy.rough.TestPayPal -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
